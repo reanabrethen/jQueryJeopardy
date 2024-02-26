@@ -1,0 +1,47 @@
+body {
+    background-color: mediumturquoise;
+}
+
+h1 {
+    color: ghostwhite;
+    text-align: center;
+    margin: 10%;
+}
+
+p {
+    color: goldenrod;
+    text-align: center;
+    text-decoration: underline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+}
+
+#jeopardy-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 5px;
+    border: solid red 2px;
+    justify-content: space-evenly;
+    margin: 10%;
+} 
+
+#jeopardy-grid div{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+   
+}
+
+.content {
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+
+}
+
+@media (min-width: 400px) {
+    .jeopardy-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
