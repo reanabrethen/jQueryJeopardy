@@ -1,17 +1,22 @@
+.comic-neue-regular {
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 body {
-    background-color: mediumturquoise;
+    background-image: linear-gradient(red, yellow)
 }
 
 h1 {
-    color: ghostwhite;
+    color: black;
     text-align: center;
-    margin: 10%;
 }
 
 p {
     color: goldenrod;
     text-align: center;
-    text-decoration: underline;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2rem;
 }
@@ -21,7 +26,8 @@ p {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-gap: 5px;
-    border: solid red 2px;
+    position: relative;
+    border: solid black 2px;
     justify-content: space-evenly;
     margin: 10%;
 } 
@@ -29,7 +35,8 @@ p {
 #jeopardy-grid div{
     width: 100px;
     height: 100px;
-    background-color: burlywood;
+    border: solid black 2px;
+    /* background-color: burlywood; */
    
 }
 
@@ -37,8 +44,34 @@ p {
     text-align: center;
     font-size: 25px;
     margin: auto;
-
+    
 }
+
+.content:hover{
+    background-color: mediumturquoise;
+    cursor: pointer;
+}
+
+.question-display{
+  text-align: center;
+  margin: 10%;
+}
+
+.input-box{
+    top: 100px;
+    left: 300px;
+    width: 300px;
+    height: 300px;
+}
+
+#user-answer , #submit-button{
+    position: relative;
+    display:block;
+    margin: 0 auto;
+    left: 300px;
+    
+}
+    
 
 @media (min-width: 400px) {
     .jeopardy-grid {

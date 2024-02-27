@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
     <script src="main.js" defer></script>
     <script src="jeopardy.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Jeopardy</title>
 </head>
-<body>
+<body class="comic-neue-regular">
     <h1>JEOPARDY</h1>
-    <p class="score">YOUR SCORE : </p>
+    <p  id="score">SCORE : $ </p>
 
     <div id="jeopardy-grid">
         <div class="content">$200</div>
@@ -40,6 +43,10 @@
         <div class="content">$1000</div>
         <div class="content">$2000</div>
     </div>
-
+    <div class="question-display"></div>
+    <div class="input-box">
+        <input type="text" id="user-answer" placeholder="Answer..." class="comic-neue-regular">
+        <button class="comic-neue-regular" id="submit-button"><b>Submit</b></button>
+    </div>
 </body>
 </html>
