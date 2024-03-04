@@ -31,31 +31,34 @@ categoryOptions.on('click', (event)=>{
     let randomizeIndex = Math.floor(Math.random() * Object.values(jeopardy).length)
     let questionValue = jeopardy['value']
     if(event.value === questionValue){
-        questionDisplay.html(jeopardy[randomizeIndex].question)
-
+        questionDisplay.html(jeopardy[randomizeIndex].question)    
     }
+    //declare jeopardy answer as variable 
+    let jeopardyAnswer = jeopardy['answer']
+    //when click submit button, check player answer to jeopardy answer
+    submitButton.on('click', ()=>{
+      if(answerBox === jeopardyAnswer){
+        moneyScore ++
+      }else if(answerBox !== jeopardyAnswer){
+        moneyScore --
+      }
+    
+    })       
+      // if(answerBox === jeopardyAnswer){
+      //   score.html(score += questionValue)
+      // }
+    })
    
     //work out logic for text box
   //have click listener on submit inside of this case
    //if this is correct question, sumbit button and text boxes work
    //when its clicked do check --> if it is correct add to total 
    //if not subtract score from total
-$('button').on('click', (event)=>{
-    console.log(event.target.innerText)
-    const text = $('input')
+
     // text.val(`${jeopardyCategories.answer}`)
-})
-   
-  
- 
-   
-  
-   
-   
-})
    
 
-
+   
 
 
 
