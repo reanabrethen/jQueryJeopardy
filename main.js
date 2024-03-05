@@ -38,11 +38,11 @@ categoryOptions.on('click', (event)=>{
     //when click submit button, check player answer to jeopardy answer
     submitButton.on('click', ()=>{
       if(answerBox === jeopardyAnswer){
-        moneyScore ++
+        score++
       }else if(answerBox !== jeopardyAnswer){
-        moneyScore --
+       score--
       }
-    
+      moneyScore.html(score)
     })       
       // if(answerBox === jeopardyAnswer){
       //   score.html(score += questionValue)
